@@ -1,0 +1,48 @@
+{
+    "value": [
+        {
+            "id": "/subscriptions/sub-id-1/resourceGroups/rg-westeu-01/providers/Microsoft.Network/expressRouteCircuits/erc-01",
+            "name": "erc-01",
+            "type": "Microsoft.Network/expressRouteCircuits",
+            "sku": {
+                "name": "Premium_MeteredData",
+                "tier": "Premium",
+                "family": "MeteredData"
+            },
+            "location": "westeurope",
+            "tags": {
+                "tag1": "value1",
+                "tag2": "value2"
+            }
+        },
+        {
+            "id": "/subscriptions/sub-id-1/resourceGroups/rg-i-westeu-01/providers/Microsoft.Storage/storageAccounts/sa-01",
+            "name": "sa-01",
+            "type": "Microsoft.Storage/storageAccounts",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "StorageV2",
+            "location": "westeurope",
+            "tags": {
+                "tag1": "value1"
+            }
+        },
+        {
+            "id": "/subscriptions/sub-id-1/resourceGroups/rg-eastus2-01/providers/Microsoft.Network/expressRouteCircuits/erc-01",
+            "name": "erc-01",
+            "type": "Microsoft.Network/expressRouteCircuits",
+            "sku": {
+                "name": "Standard_MeteredData",
+                "tier": "Standard",
+                "family": "MeteredData"
+            },
+            "location": "eastus2",
+            "tags": {
+                 "tag1": "value1",
+                 "tag2": "value2"
+            }
+        }
+    ]
+}

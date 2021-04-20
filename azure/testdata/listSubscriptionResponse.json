@@ -1,0 +1,25 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/sub-id-1",
+      "authorizationSource": "RoleBased",
+      "managedByTenants": [],
+      "tags": {
+        "name": "value"
+      },
+      "subscriptionId": "subid-aaa-bbb",
+      "tenantId": "tenantId-aaa-bbb",
+      "displayName": "subscription-displayname",
+      "state": "Enabled",
+      "subscriptionPolicies": {
+        "locationPlacementId": "Public_2014-09-01",
+        "quotaId": "EnterpriseAgreement_2014-09-01",
+        "spendingLimit": "Off"
+      }
+    }
+  ],
+  "count": {
+    "type": "Total",
+    "value": 1
+  }
+}
