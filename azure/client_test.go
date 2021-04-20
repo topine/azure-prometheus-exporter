@@ -29,6 +29,8 @@ func Test_client_authenticate(t *testing.T) {
 		clientId     string
 		clientSecret string
 		tenantId     string
+		loginBaseURL string
+		azureBaseURL string
 	}
 	tests := []struct {
 		name    string
@@ -42,6 +44,7 @@ func Test_client_authenticate(t *testing.T) {
 				clientId:     "client-id",
 				clientSecret: "client-secret",
 				tenantId:     "tenant-id",
+				loginBaseURL: httpTest.URL,
 			}, want: "token-response",
 			wantErr: false},
 	}
@@ -52,6 +55,7 @@ func Test_client_authenticate(t *testing.T) {
 				clientId:     tt.fields.clientId,
 				clientSecret: tt.fields.clientSecret,
 				tenantId:     tt.fields.tenantId,
+				loginBaseURL: tt.fields.loginBaseURL,
 			}
 			got, err := c.authenticate()
 			if (err != nil) != tt.wantErr {
@@ -111,6 +115,8 @@ func Test_client_listSubscriptions(t *testing.T) {
 		clientId     string
 		clientSecret string
 		tenantId     string
+		loginBaseURL string
+		azureBaseURL string
 	}
 	type args struct {
 		token string
